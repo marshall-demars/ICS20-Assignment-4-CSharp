@@ -56,7 +56,7 @@ class Program
         {
             toppingsCost = 1.75;
         }
-        
+
         if (pizzaToppings == 3)
         {
             toppingsCost = 2.50;
@@ -66,9 +66,8 @@ class Program
         {
             toppingsCost = 3.35;
         }
-        
-        toppingsCost = Convert.ToDouble(Console.ReadLine());
-        sizeCost = Convert.ToDouble(Console.ReadLine());
+
+
         totalPrice = (toppingsCost + sizeCost) * tax;
         Console.WriteLine("The total cost of your pizza today is $" + totalPrice.ToString("0.00") + ". Enjoy!");
         Console.WriteLine("\nDone.");
