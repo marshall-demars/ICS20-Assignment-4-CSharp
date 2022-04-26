@@ -10,16 +10,14 @@ class Program
     public static void Main(string[] args)
     {
         // This program creates and prices a pizza
+        const double TAX = 1.13;
         double pizzaSize;
-        double sizeCost;
-        double toppingsCost;
+        double sizeCost = 0;
+        double toppingsCost = 0;
         double pizzaToppings;
-        const double tax = 1.13;
         double totalPrice;
 
-
         Console.WriteLine("This program let's you customize a pizza and will calculate the cost");
-
         Console.WriteLine("");
         Console.WriteLine("Here at my pizzaria, you can have 2 sizes and upto 4 toppings");
         Console.WriteLine("");
@@ -68,7 +66,8 @@ class Program
         }
 
 
-        totalPrice = (toppingsCost + sizeCost) * tax;
+        totalPrice = (toppingsCost + sizeCost) * TAX;
+        Console.WriteLine("");
         Console.WriteLine("The total cost of your pizza today is $" + totalPrice.ToString("0.00") + ". Enjoy!");
         Console.WriteLine("\nDone.");
     }
